@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="top" class="text-center">
+    <h1 class="display-4">Login Page</h1>
+</div>
+
+<div >
+    <ul class="navbar-nav" style="text-align: center;  ">
+        <li><br /><br /><br /><br /><br /></li>
+        
+        <li >
+            <a style="width:300px;display: inline-block; background-color:black;" class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="StudentLogin">Login as Student</a>
+        </li>
+        <li><br /></li>
+        <li >
+            <a style="width:300px; display: inline-block; background-color:black;" class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="TeacherLogin">Login as Teacher</a>
+        </li>
+        <li><br /></li>
+        <li>
+            <a style="width:300px; display: inline-block; background-color:black;" class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="StaffLogin">Login as Staff</a>
+        </li>
+    </ul>
+</div>

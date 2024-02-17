@@ -1,0 +1,58 @@
+﻿@model IEnumerable<dbfirstapp.Models.Exam>
+
+@{
+    ViewData["Title"] = "ViewExam";
+}
+
+<h1 id="top">Exam Schedule</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ETime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Course)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseNameNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EId)
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ETime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course.CName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseNameNavigation.CName)
+            </td>
+           
+        </tr>
+}
+    </tbody>
+</table>

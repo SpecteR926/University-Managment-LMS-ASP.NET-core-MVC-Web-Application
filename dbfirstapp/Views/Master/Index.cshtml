@@ -1,0 +1,42 @@
+﻿@model IEnumerable<dbfirstapp.Models.Admin>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 id="top">DashBoard</h1>
+
+
+<div style="">
+    <ul class="navbar-nav" style="text-align: center; ">
+        <li><br /><br /><br /></li>
+
+        <li>
+            <a style="width:300px;  display: inline-block; background-color:black;" class="nav-link text-light" asp-area="" asp-controller="Students" asp-action="Index">Manage Students</a>
+        </li>
+        <li><br /></li>
+        <li>
+            <a style="width:300px; display: inline-block; background-color:black;" class="nav-link text-light" asp-area="" asp-controller="Teachers" asp-action="Index">Manage Teachers</a>
+        </li>
+        <li><br /></li>
+        <li>
+            <a style="width:300px; display: inline-block; background-color:black;" class="nav-link text-light" asp-area="" asp-controller="Departments" asp-action="Index">Manage Departments</a>
+        </li>
+        <li><br /></li>
+        <li>
+            <a style="width:300px; display: inline-block; background-color:black;" class="nav-link text-light" asp-area="" asp-controller="Exams" asp-action="Index">Manange Exam Schedule</a>
+        </li>
+        <li><br /></li>
+        <li>
+            <a style="width:300px; display: inline-block; background-color:black;" class="nav-link text-light" asp-area="" asp-controller="Schedules" asp-action="Index ">Manage Class Schedule</a>
+        </li
+        <li><br /></li>
+        <li>
+            <a style="width:300px; display: inline-block; background-color:black;" class="nav-link text-light" asp-area="" asp-controller="Courses" asp-action="">Manage Courses</a>
+        </li>
+        <li><br /></li>
+        <li>
+            <a style="width:300px; display: inline-block; background-color:black;" class="nav-link text-light" asp-area="" asp-controller="" asp-action="">Manage Registration</a>
+        </li>
+    </ul>
+</div>

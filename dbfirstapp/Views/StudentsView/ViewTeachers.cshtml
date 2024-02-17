@@ -1,0 +1,42 @@
+﻿@model IEnumerable<dbfirstapp.Models.Teacher>
+
+@{
+    ViewData["Title"] = "ViewTeachers";
+}
+
+<h1 id="top">Teachers</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TName)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TId)
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TName)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+           
+        </tr>
+}
+    </tbody>
+</table>

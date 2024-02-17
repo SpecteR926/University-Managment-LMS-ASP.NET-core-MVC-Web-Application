@@ -1,0 +1,35 @@
+﻿@model IEnumerable<dbfirstapp.Models.Department>
+
+@{
+    ViewData["Title"] = "ViewDep";
+}
+
+<h1 id="top">Departments</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DId)
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DName)
+            </td>
+           
+        </tr>
+}
+    </tbody>
+</table>
